@@ -1,0 +1,16 @@
+.hover-underline{
+    position: relative;
+}
+.hover-underline::after{
+    content:'';
+    position: absolute;
+    background-color: black;
+    height: 0.1px;
+    left: 0;
+    bottom: -2.5px;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.hover-underline:hover::after{
+    width: 100%;
+}
