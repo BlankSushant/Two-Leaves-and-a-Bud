@@ -20,7 +20,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                     <div class="laptop hidden lg:flex items-center justify-start  gap-[2rem]">
                         <div class="hidden lg:flex items-center justify-start">
                             <a href="#" class="flex items-center gap-[0.5rem] text-2xl">
-                                <div>Shop</div>
+                                <div class="">Shop</div>
                                 <svg class="text-lg bg-[#C0DBFF] h-fit w-fit px-1.5 py-1.5 rounded-full border-[0.1px]"
                                     width="8" height="5" viewBox="0 0 8 5" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@
                         </div>
                         <div class="hidden lg:flex items-center justify-start">
                             <a href="#" class="flex items-center gap-[0.5rem] text-2xl">
-                                <div>Learn</div>
+                                <div class="">Learn</div>
                                 <svg class="text-lg bg-[#C0DBFF] h-fit w-fit px-1.5 py-1.5 rounded-full border-[0.1px]"
                                     width="8" height="5" viewBox="0 0 8 5" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@
                         </div>
                         <div class="hidden lg:flex items-center justify-start">
                             <a href="#" class="flex items-center gap-[0.5rem] text-2xl">
-                                <div>Reviews</div>
+                                <div class="hover-underline">Reviews</div>
                                 <svg class="text-lg" width="24" height="23" viewBox="0 0 24 23" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -94,9 +94,9 @@
                 <div id="nav-right"
                     class="right whitespace-nowrap flex items-center justify-end uppercase font-[Figtree] gap-[1.4rem]">
                     <div class="laptop hidden lg:flex gap-[1.4rem] items-center justify-end">
-                        <a href="#" class="text-xs font-semibold [word-spacing:0.2rem]">My account</a>
-                        <a href="#" class="text-xs font-semibold [word-spacing:0.2rem]">Cafe & Wholesale Partner</a>
-                        <a href="#" class="text-xs font-semibold [word-spacing:0.2rem]">Tea Journal</a>
+                        <a href="#" class="text-xs font-semibold [word-spacing:0.2rem] hover-underline">My account</a>
+                        <a href="#" class="text-xs font-semibold [word-spacing:0.2rem] hover-underline">Cafe & Wholesale Partner</a>
+                        <a href="#" class="text-xs font-semibold [word-spacing:0.2rem] hover-underline">Tea Journal</a>
 
                     </div>
 
@@ -123,7 +123,7 @@
                 </div>
             </div>
         </nav>
-        <section id="hero" class="font-[Figtree] h-[95vh] flex flex-col items-start justify-end gap-[1.5rem] bg-[image:url(/Assets/Hero-mobile.webp)] lg:bg-[image:url(/Assets/Hero-desktop.webp)] bg-cover bg-position-[0_10%]  md:bg-position-[0_30%] lg:bg-position-[30%_0]
+        <section id="Hero" class="font-[Figtree] h-[95vh] flex flex-col items-start justify-end gap-[1.5rem] bg-[image:url(/Assets/Hero-mobile.webp)] lg:bg-[image:url(/Assets/Hero-desktop.webp)] bg-cover bg-position-[0_10%]  md:bg-position-[0_30%] lg:bg-position-[30%_0]
              text-white p-[2rem] lg:p-[3rem] relative">
             <h1
                 class="font-[Reckless] flex justify-center w-full text-[3.8rem] text-center leading-[4rem] lg:leading-[5.5rem] lg:text-start lg:text-[5rem] lg:justify-start lg:w-[25rem]">
@@ -139,19 +139,338 @@
                 <i class="ri-arrow-down-long-line text-xl"></i>
             </div>
         </section>
-        <section id="explore" class="pt-30 px-[2rem] lg:px-[3rem]">
-            <div class="w-full flex justify-center pb-[138px]">
-                <div class="w-1/2 flex justify-center text-center text-[clamp(2rem,3.8vw,3rem)] ">
-                    <div class="text-center">A <em class="font-[Reckless] italic tight font-normal text-center"> great
-                        </em>cup starts with a careful pluck - the top two leaves and a bud.</div>
+        <section id="Explore" class="pt-30 pb-24 lg:pb-30 border-b-2">
+            <div class="w-full flex pb-[100px] lg:pb-[138px]">
+                <div class="w-full lg:w-2/3 flex mx-auto justify-center text-center text-[clamp(2rem,3.8vw,3rem)]">
+                    <div class="text-center px-[2rem] lg:px-[3rem]">
+                        A <em class="font-[Reckless] italic tight font-normal text-center"> great </em>cup starts with a
+                        careful pluck - the top two leaves and a bud.
+                    </div>
                 </div>
             </div>
-            <div class="font-[Bebas_Neue] text-4xl font-bold -rotate-3 bg-purple-400 inline-block origin-center px-2 py-1 border-1 rounded-sm mb-10">Best Sellers</div>
-            <div class="cards">
-                <div class="card">
 
-                </div>
+            <div
+                class="font-[Bebas_Neue] w-full flex justify-start text-4xl font-bold -rotate-3 mb-10 lg:justify-center px-[2rem] lg:px-[3rem]">
+                <span
+                    class="bg-[#E7B8FF] inline-block origin-center border-1 border-[#201C1A] rounded-sm px-2 py-1 tracking-wide">BEST
+                    SELLERS</span>
             </div>
+
+            <div class="cards flex overflow-x-auto gap-[1rem] lg:gap-[2rem] pb-[2rem] hide-scrollbar">
+
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full ml-[2rem] lg:ml-[3rem]">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#C1EE91] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-1.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Tea Sachets</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#C1EE91]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 4.71 (84)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Organic Tropical Green Tea</div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $11.95</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Our Organic Tropical Green
+                            is a fruity and fun take on a classic green tea.</p>
+                    </div>
+                </div>
+
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#FFD884] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-2.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Gifts & samplers</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#FFD884]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 4.9 (42)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Herbal Tea Trio</div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $33.30</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nostrum.</p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#A3E6C5] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-3.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Naked Sachets</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#A3E6C5]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 4.5 (18)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Organic-Peppermint-50 Naked Tea
+                            Sachets</div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $14.50</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nostrum.</p>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#C0DBFF] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-4.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Gifts and samplers</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#C0DBFF]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 5.0 (102)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Classic Bamboo Tea Chest</div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $42.95</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nostrum.</p>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#D4E894] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-5.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Latte Mix</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#D4E894]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 4.8 (55)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Nice Matcha Latte Mix</div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $12.95</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nostrum.</p>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#FFC4B5] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-6.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Latte Mix</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#FFC4B5]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 4.6 (23)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Nice Chai Tea Latte Mix</div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $15.50</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nostrum.</p>
+                    </div>
+                </div>
+
+                <!-- CARD 7 -->
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#F1C4E8] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-7.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Tea Sachets</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#F1C4E8]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 4.9 (88)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Organic Mountain High Chai Tea</div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $24.00</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nostrum.</p>
+                    </div>
+                </div>
+
+                <!-- CARD 8 -->
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#B5C4FF] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-8.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Naked Sachets</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#B5C4FF]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 4.7 (31)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Organic Earl Grey - 50 Naked Tea
+                            Sachets
+                        </div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $15.95</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nostrum.</p>
+                    </div>
+                </div>
+
+                <!-- CARD 9: Added mr-[2rem] lg:mr-[3rem] and shrink-0 -->
+                <div class="card flex flex-col shrink-0 w-[18rem] lg:w-[21rem] h-full mr-[2rem] lg:mr-[3rem]">
+                    <div
+                        class="card-image relative rounded-2xl bg-[#FFE6A7] border-1 border-[#201C1A] aspect-[296/348] w-full">
+                        <img src="./Assets/Card-9.webp" alt="card image"
+                            class="object-contain h-[80%] w-[90%] lg:h-[90%] origin-center absolute z-0 lg:object-right lg:scale-90 top-5 lg:top-2 lg:left-5">
+                        <div class="flex flex-col justify-between h-full w-full p-[1rem] relative z-10">
+                            <div class="flex justify-between items-start">
+                                <div
+                                    class="font-[Bebas_Neue] bg-white border-1 border-[#201C1A] px-2 py-0.5 rounded-sm text-lg lg:text-xl tracking-wider uppercase">
+                                    Naked Sachets</div>
+                                <div class="font-[Figtree] text-xs font-semibold bg-[#FFE6A7]/80 px-1 rounded"><i
+                                        class="ri-star-s-fill text-[#201C1A]"></i> 4.8 (19)</div>
+                            </div>
+                            <div class="w-full flex justify-end">
+                                <button
+                                    class="flex flex-col bg-white border-1 border-[#201C1A] rounded-xl px-4 py-2 items-center justify-center text-xs font-[Figtree] font-semibold hover:bg-[#2A2857] hover:text-white transition-colors ease-out">
+                                    <i class="ri-add-line text-lg leading-none"></i>
+                                    <span class="leading-none mt-1">Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 mt-4">
+                        <div class="text-[1.35rem] leading-tight font-[Reckless]">Alpine Berry - 15 Naked Tea Sachets
+                        </div>
+                        <div class="font-[Figtree] text-sm font-semibold mt-2 text-[#201C1A]">From $19.99</div>
+                        <p class="font-[Figtree] text-sm mt-1 text-[#201C1A]/80 leading-snug">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Nostrum.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full flex flex-col items-center justify-center mt-12 pb-12">
+
+                <div class="flex lg:hidden gap-2 mb-8 items-center justify-center">
+
+                    <div class="h-[2px] w-6 bg-[#201C1A]"></div>
+                    <div class="h-[2px] w-6 bg-gray-300"></div>
+                    <div class="h-[2px] w-6 bg-gray-300"></div>
+                    <div class="h-[2px] w-6 bg-gray-300"></div>
+                    <div class="h-[2px] w-6 bg-gray-300"></div>
+                    <div class="h-[2px] w-6 bg-gray-300"></div>
+                    <div class="h-[2px] w-6 bg-gray-300"></div>
+                    <div class="h-[2px] w-6 bg-gray-300"></div>
+                    <div class="h-[2px] w-6 bg-gray-300"></div>
+                </div>
+
+                <div class="hidden lg:flex gap-3 mb-10 items-center justify-center">
+                    <div class="h-[2px] w-12 bg-[#201C1A]"></div>
+                    <div class="h-[2px] w-12 bg-gray-300"></div>
+                    <div class="h-[2px] w-12 bg-gray-300"></div>
+                </div>
+
+                <button
+                    class="bg-[#2A2857] text-white px-10 py-3.5 rounded-full font-[Figtree] text-[1rem] font-medium border-2 border-[#2A2857] hover:bg-transparent hover:text-[#2A2857] transition-colors ease-out">
+                    Explore All Teas
+                </button>
+
+            </div>
+        </section>
+        <section id="Discover">
+            haha
         </section>
     </main>
 </body>
