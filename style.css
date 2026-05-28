@@ -5,7 +5,7 @@
     content:'';
     position: absolute;
     background-color: black;
-    height: 0.1px;
+    height: 1px;
     left: 0;
     bottom: -2.5px;
     width: 0;
@@ -13,4 +13,12 @@
 }
 .hover-underline:hover::after{
     width: 100%;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
